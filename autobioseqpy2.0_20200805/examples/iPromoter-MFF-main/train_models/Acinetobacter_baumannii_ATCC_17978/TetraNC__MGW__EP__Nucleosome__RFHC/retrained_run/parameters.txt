@@ -1,0 +1,38 @@
+--dataType dna other other other other other
+--dataEncodingType dict other other other other other
+--spcLen 81 200 200 200 200 200
+--firstKernelSize 
+--dataTrainFilePaths ./examples/PDD/data/potr.txt ./examples/PDD/data/netr.txt ./examples/PDD/data/potr-TetraNC.txt ./examples/PDD/data/netr-TetraNC.txt ./examples/PDD/data/potr-MGW.txt ./examples/PDD/data/netr-MGW.txt ./examples/PDD/data/potr-EP.txt ./examples/PDD/data/netr-EP.txt ./examples/PDD/data/potr-Nucleosome.txt ./examples/PDD/data/netr-Nucleosome.txt ./examples/PDD/data/potr-RFHC.txt ./examples/PDD/data/netr-RFHC.txt
+--dataTrainLabel 1 0 1 0 1 0 1 0 1 0 1 0
+--dataTestFilePaths 
+--dataTestLabel 
+--dataTrainModelInd 0 0 1 1 2 2 3 3 4 4 5 5
+--dataTestModelInd 
+--outSaveFolderPath outs_saved/TetraNC__MGW__EP__Nucleosome__RFHC
+--showFig False
+--saveFig True
+--figDPI 300
+--savePrediction True
+--dataSplitScale 0.8
+--modelLoadFile examples/PDD/model/FNet.py ./examples/PDD/model/TetraNC.py ./examples/PDD/model/MGW.py ./examples/PDD/model/EP.py ./examples/PDD/model/Nucleosome.py ./examples/PDD/model/RFHC.py
+--weightLoadFile 
+--shuffleDataTrain True
+--shuffleDataTest False
+--batch_size 128
+--epochs 20
+--useKMer True
+--KMerNum 3
+--inputLength 
+--loss binary_crossentropy
+--optimizer optimizers.Adam(lr=0.001,amsgrad=False,decay=False)
+--metrics acc
+--modelSaveName trained_model.json
+--weightSaveName trained_weights.bin
+--noGPU False
+--paraFile None
+--paraSaveName parameters.txt
+--seed 1
+--labelToMat False
+--colorText Auto
+--verbose True
+--reshapeSize 
